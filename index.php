@@ -4,7 +4,7 @@ do {
     $playerOne = readline('Player 1 (X) - Digite o seu nome: ');
     $playerTwo = readline('Player 2 (O) - Digite o seu nome: ');
 
-    $player = X;
+    $player = 'X';
 
     $board = [
         '.','.','.',
@@ -25,7 +25,7 @@ do {
 
 
             EOL
-        ;
+        ;break;
 
         $position = (int) readline("Player {$player}, digite a sua posição: ");
 
@@ -88,7 +88,7 @@ do {
 
 
         EOL
-    ;
+    ;break; 
 
     if($winner === 'X') {
         echo "VENCEDOR: {$playerOne}. \n";
@@ -104,4 +104,4 @@ do {
 
     ); echo "\n";
 
-} while ($plarAgain === true);
+} while ($playAgain === true);
